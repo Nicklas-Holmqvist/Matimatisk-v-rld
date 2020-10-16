@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Matematisk värld</title>
 </head>
 <body>
@@ -13,13 +14,20 @@
         <div class="math-container">
             <div class="math-item">
                 <p id="nr1">5</p>
-                <p id="function">+</p>
+                <p id="plus">+</p>
                 <p id="nr2">6</p>
+                <p>=</p>
+                <input type="text" id="answer">
+                <p id="correct"></p>
+                <form id="Myform">
+                <input type="button" value="Rätta" id="btnCorrect" onclick="correctedNumber()">
+                </form>
             </div>
         </div>
     </main>
     <footer>
 
     </footer>    
+    <script src="./style/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+p {
+    padding: .5rem;
+}
+
+.math-item {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,5 +1,5 @@
 const correctAnswer = "Rätt!";
-const wrongAnswer = "Fel!";
+const wrongAnswer = "Fel, försök igen!";
 
 
 let mathItem = document.getElementById('mathItem');
@@ -33,8 +33,8 @@ if (numberSum === userSum) {
 
     console.log('Rätt');
 
-    newBtn.style.opacity = 1;
-    correctBtn.style.opacity = 0;
+    newBtn.style.display = 'flex';
+    correctBtn.style.display = 'none';
 
     mathItem.style.background = '#7FB069';
 

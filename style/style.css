@@ -1,8 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.math-container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
 p {
-    padding: .5rem;
+    font-size: 3rem;
+    padding-left: .5rem;
+
+    color: #E2E2E2;
+}
+
+p:first-child {
+    padding-left: 0;
 }
 
 .math-item {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 20rem;
+    height: 45%;
+
+    padding: 2rem 1rem 1rem 1rem;
+
+    background: #384D48;
+
+    transition: all .5s ease;
+}
+
+.item-number {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-input {
+    width: 5rem;
+
+    font-size: 3rem;
+    text-align: center;
+
+    margin-left: .5rem;
+    padding: .2rem 0 .2rem 0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    outline: none;
+}
+
+.user-input:focus {
+
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    padding: 1rem .5rem;
+}
+
+.correct-btn {
+    width: 100%;
+
+    font-size: 1.5rem;
+
+    border: none;
+    padding: .5rem 1rem;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    translate: all .3s ease;
+}
+
+.new {
+    opacity: 0;
+    margin-top: .5rem;
+}
+
+.correct {
+    height: 2rem;
+
 }

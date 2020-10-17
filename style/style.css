@@ -6,6 +6,10 @@
     font-family: 'Bubblegum Sans', cursive;
 }
 
+body {
+    background: #E2E2E2;
+}
+
 main {
     height: 100vh;
     width: 100%;
@@ -19,11 +23,21 @@ main {
     align-items: center;
 } 
 
+h1 {
+    font-size: 3rem;
+
+    color: #FFF8F0;
+
+    padding-bottom: 5rem;
+}
+
 p {
     font-size: 3rem;
     padding-left: .5rem;
 
-    color: #E2E2E2;
+    color: #FFF8F0;
+
+    transition: all .5s ease;
 }
 
 p:first-child {
@@ -36,12 +50,15 @@ p:first-child {
     justify-content: center;
     align-items: center;
 
-    width: 20rem;
-    height: 45%;
+    width: 25rem;
+    height: 35rem;
 
     padding: 2rem 1rem 1rem 1rem;
 
-    background: #384D48;
+    border: .5rem rgb(253, 253, 253) solid;
+    border-radius: 15px;
+
+    background: #FF9F1C;
 
     transition: all .5s ease;
 }
@@ -68,11 +85,12 @@ p:first-child {
     border-radius: 10px;
 
     outline: none;
+
+    transition: all .5s ease;
 }
 
 .user-input:focus {
 
-    
 }
 
 form {
@@ -83,10 +101,19 @@ form {
     margin-top: 1rem;
 
     padding: 1rem .5rem;
+
+    transition: all .5s ease;
+}
+
+.correct {
+    /* visibility: hidden; */
 }
 
 .correct-btn {
     width: 100%;
+
+    color: #011627;
+    background: #FFF8F0;
 
     font-size: 1.5rem;
 
@@ -107,5 +134,4 @@ form {
 
 .correct {
     height: 2rem;
-
 }

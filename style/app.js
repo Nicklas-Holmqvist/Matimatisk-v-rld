@@ -1,9 +1,12 @@
 const correctAnswer = "Rätt!";
 const wrongAnswer = "Fel!";
 
-let nr1 = document.getElementById('nr1').innerText = getRandomNumber(50);
-let nr2 = document.getElementById('nr2').innerText = getRandomNumber(50);
+
+let mathItem = document.getElementById('mathItem');
+let nr1 = document.getElementById('nr1').innerText = getRandomNumber(20);
+let nr2 = document.getElementById('nr2').innerText = getRandomNumber(20);
 let disableInput = document.getElementById('answer')
+let correctOutput = document.getElementById('correct')
 let newBtn = document.getElementById('newBtn');
 let correctBtn = document.getElementById('correctBtn');
 
@@ -25,14 +28,25 @@ function correctedNumber () {
 
 if (numberSum === userSum) {
     correct.innerText = correctAnswer;
+
     disableInput.readOnly = true;
+
     console.log('Rätt');
+
     newBtn.style.opacity = 1;
     correctBtn.style.opacity = 0;
 
+    mathItem.style.background = '#7FB069';
+
+    disableInput.style.backgroundColor = 'rgb(255,255,255)';
+    disableInput.style.color = '#011627';
+
 }   else {
     corrected.innerText = wrongAnswer;
+
     console.log('Fel');
+
+    mathItem.style.background = 'rgb(255,0,0)';
 }
 }
 

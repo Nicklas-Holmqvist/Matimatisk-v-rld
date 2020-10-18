@@ -44,6 +44,11 @@ p:first-child {
     padding-left: 0;
 }
 
+a {
+    color: #011627;
+    padding-left: .3rem;
+}
+
 .math-item {
     display: flex;
     flex-direction: column;
@@ -140,4 +145,13 @@ form {
     font-size: 1.5rem;
 
     transition: all .5s ease;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+
+    text-align: center;
 }

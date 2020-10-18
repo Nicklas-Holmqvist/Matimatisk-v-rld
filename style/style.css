@@ -5,13 +5,17 @@
 
     font-family: 'Bubblegum Sans', cursive;
 }
+html {
+    height: 100%;
+}
 
 body {
     background: #E2E2E2;
+    height: 100%;
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -77,7 +81,7 @@ a {
 }
 
 .user-input {
-    width: 5rem;
+    width: 6rem;
 
     font-size: 3rem;
     text-align: center;

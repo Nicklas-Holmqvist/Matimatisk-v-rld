@@ -98,10 +98,6 @@ a {
     transition: all .5s ease;
 }
 
-.user-input:focus {
-
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -113,10 +109,6 @@ form {
     padding: 1rem .5rem;
 
     transition: all .5s ease;
-}
-
-.correct {
-    /* visibility: hidden; */
 }
 
 .correct-btn {

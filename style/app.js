@@ -9,7 +9,6 @@ const wrongAnswer = "Fel, försök igen!";
 Alla variabler som kan nås utanför frunktioner
 */
 
-
 let numberOne = document.getElementById('nr1').innerText = newNumberOne();
 let numberTwo = document.getElementById('nr2').innerText = newNumberTwo();
 let mathItem = document.getElementById('mathItem');
@@ -17,34 +16,54 @@ let disableInput = document.getElementById('answer')
 let correctOutput = document.getElementById('correct')
 let newBtn = document.getElementById('newBtn');
 let correctBtn = document.getElementById('correctBtn');
-
+let pTag = document.querySelectorAll("p");
+let h1Tag = document.querySelectorAll(".h1");
 
 /* 
-Funktion som körs när man trycker på "nytt tal" knappen
+Alla funktioner
 */
 
+// Funktion för nummer 1
 function newNumberOne() {
     let nr1 = getRandomNumber(5);
     console.log(nr1)
     return nr1;
 }
 
+// Funktion för nummer 2
 function newNumberTwo() {
     let nr2 = getRandomNumber(5);
     console.log(nr2)
     return nr2
 }
 
+// Random funktion
+function getRandomNumber(limit) {
+    const randomValue = Math.random() * limit;
+    return Math.round(randomValue);
+}
+
+// function theme() {
+//     mathItem.style.background = '#FFFFFF';
+    // pTag.style.color = '#000000';
+    // h1Tag.style.color = '#000000';
+    // newBtn.style.background = '#000000';
+    // newBtn.style.color = '#FFFFFFF';
+// }
+
+/* 
+Funktion som körs när man trycker på "nytt tal" knappen
+*/
+
 function newNumber () {
     numberOne = document.getElementById('nr1').innerText = newNumberOne();
     numberTwo = document.getElementById('nr2').innerText = newNumberTwo();
     correctBtn.style.opacity = 1;
     disableInput.readOnly = false;
-    mathItem.style.background = ' #FF9F1C';
+    mathItem.style.background = '#FF9F1C';
     disableInput.value = '';
     newBtn.style.display = 'none';
     correctBtn.style.display = 'flex';
-
 }
 
 /* 
@@ -82,13 +101,4 @@ if (numberSum === userSum) {
 
     mathItem.style.background = 'rgb(255,0,0)';
 }
-}
-
-/* 
-Random funktion
-*/
-
-function getRandomNumber(limit) {
-    const randomValue = Math.random() * limit;
-    return Math.round(randomValue);
 }

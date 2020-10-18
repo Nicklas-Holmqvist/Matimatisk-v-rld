@@ -9,42 +9,24 @@ const wrongAnswer = "Fel, försök igen!";
 Alla variabler som kan nås utanför frunktioner
 */
 
-
-let numberOne = document.getElementById('nr1').innerText = newNumberOne();
-let numberTwo = document.getElementById('nr2').innerText = newNumberTwo();
 let mathItem = document.getElementById('mathItem');
 let disableInput = document.getElementById('answer')
 let correctOutput = document.getElementById('correct')
 let newBtn = document.getElementById('newBtn');
 let correctBtn = document.getElementById('correctBtn');
 
+// Randomtalen
+let nr1 = document.getElementById('nr1').innerText = getRandomNumber(150);
+let nr2 = document.getElementById('nr2').innerText = getRandomNumber(150);
 
 /* 
 Funktion som körs när man trycker på "nytt tal" knappen
 */
 
-function newNumberOne() {
-    let nr1 = getRandomNumber(5);
-    console.log(nr1)
-    return nr1;
-}
-
-function newNumberTwo() {
-    let nr2 = getRandomNumber(5);
-    console.log(nr2)
-    return nr2
-}
-
 function newNumber () {
-    numberOne = document.getElementById('nr1').innerText = newNumberOne();
-    numberTwo = document.getElementById('nr2').innerText = newNumberTwo();
+    reload = location.reload();
     correctBtn.style.opacity = 1;
     disableInput.readOnly = false;
-    mathItem.style.background = ' #FF9F1C';
-    disableInput.value = '';
-    newBtn.style.display = 'none';
-    correctBtn.style.display = 'flex';
-
 }
 
 /* 
@@ -55,7 +37,7 @@ function correctedNumber () {
     let answer = document.getElementById('answer').value;
     let corrected = document.getElementById('correct');
     
-    let numberSum = Number(numberOne) + Number(numberTwo);
+    let numberSum = Number(nr1) + Number(nr2);
     let userSum = Number(answer);
 
     console.log(numberSum);
@@ -74,6 +56,7 @@ if (numberSum === userSum) {
 
     disableInput.style.backgroundColor = 'rgb(255,255,255)';
     disableInput.style.color = '#011627';
+
 
 // Om det är fel inmatat värde
 }   else {

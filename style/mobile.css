@@ -1,7 +1,7 @@
 @media (max-width:35em) {
-    body {
+    /* body {
         font-size: 90%;
-    }
+    } */
 
     .math-item {
         width: 100%;
@@ -10,5 +10,21 @@
         border: none;
         border-radius: 0;
     }
+
+    form {
+        margin-top: 2rem;
+    }
+
+    .correct-btn {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .correct {
+        padding-top: 1rem;
+        font-size: 3rem;
+
+    }
+    
 
 }

@@ -3,8 +3,8 @@ const wrongAnswer = "Fel, försök igen!";
 
 
 let mathItem = document.getElementById('mathItem');
-let nr1 = document.getElementById('nr1').innerText = getRandomNumber(20);
-let nr2 = document.getElementById('nr2').innerText = getRandomNumber(20);
+let nr1 = document.getElementById('nr1').innerText = getRandomNumber(50);
+let nr2 = document.getElementById('nr2').innerText = getRandomNumber(50);
 let disableInput = document.getElementById('answer')
 let correctOutput = document.getElementById('correct')
 let newBtn = document.getElementById('newBtn');
@@ -43,6 +43,7 @@ if (numberSum === userSum) {
 
 }   else {
     corrected.innerText = wrongAnswer;
+    disableInput.value = '';
 
     console.log('Fel');
 

@@ -19,20 +19,28 @@ let correctBtn = document.getElementById('correctBtn');
 let pTag = document.querySelectorAll("p");
 let h1Tag = document.querySelectorAll(".h1");
 
+// const diffStd = document.getElementById('diff').innerText;
+// console.log(Number(diffStd));
+
 /* 
 Alla funktioner
 */
 
+// function changeDiff() {
+//     document.getElementById('diffNr').value;
+
+// }
+
 // Funktion för nummer 1
 function newNumberOne() {
-    let nr1 = getRandomNumber(5);
+    let nr1 = getRandomNumber(60);
     console.log(nr1)
     return nr1;
 }
 
 // Funktion för nummer 2
 function newNumberTwo() {
-    let nr2 = getRandomNumber(5);
+    let nr2 = getRandomNumber(60);
     console.log(nr2)
     return nr2
 }
@@ -42,14 +50,6 @@ function getRandomNumber(limit) {
     const randomValue = Math.random() * limit;
     return Math.round(randomValue);
 }
-
-// function theme() {
-//     mathItem.style.background = '#FFFFFF';
-    // pTag.style.color = '#000000';
-    // h1Tag.style.color = '#000000';
-    // newBtn.style.background = '#000000';
-    // newBtn.style.color = '#FFFFFFF';
-// }
 
 /* 
 Funktion som körs när man trycker på "nytt tal" knappen
@@ -64,6 +64,7 @@ function newNumber () {
     disableInput.value = '';
     newBtn.style.display = 'none';
     correctBtn.style.display = 'flex';
+    correct.innerText = '';
 }
 
 /* 

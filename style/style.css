@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
     font-family: 'Bubblegum Sans', cursive;
+
+    text-shadow: .5px 1px 5px #0f0f0f55;    
 }
 html {
     height: 100%;
@@ -70,6 +72,8 @@ a {
     background: #FF9F1C;
 
     transition: all .5s ease;
+
+    box-shadow: 1px 1px 5px #0f0f0f55;
 }
 
 .item-number {
@@ -96,6 +100,9 @@ a {
     outline: none;
 
     transition: all .5s ease;
+    
+    box-shadow: 1px 1px 5px #0f0f0f55;
+    text-shadow: none;
 }
 
 form {
@@ -129,6 +136,8 @@ form {
     outline: none;
 
     translate: all .3s ease;
+
+    box-shadow: 1px 1px 5px #0f0f0f55;
 }
 
 .new {
@@ -151,3 +160,12 @@ footer {
 
     text-align: center;
 }
+
+span {
+    text-shadow: none;
+}
+
+.fa-envelope {
+    text-shadow: none;
+}
+
